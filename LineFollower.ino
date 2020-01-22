@@ -1,3 +1,10 @@
+// Gabriel Martinica and Eduardo Peña
+// Spring 2019 
+// Robotics Competition TTU 
+// This robot follows a black line on a white background
+// It uses three photosensor to determine if the robot is
+// centered in the black line and adjusts the DC motors accordingly
+
 int motorPinright1 = 9;
 int motorPinright2 = 6;
 int motorPinleft1 = 3;
@@ -48,7 +55,9 @@ void loop() {
   {
     sensorrightwhite = false;
   }
-
+  
+  // Uncomment the following line to read sensor value
+  
   /* Serial.println(analogRead(sensorpincenter)); */
 
   /* if the robot is on the center and sees black of the line and the two sensors on the side see white*/
